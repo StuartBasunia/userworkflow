@@ -43,12 +43,12 @@ jobs:
            cd mysheely
            cd mysheely-master
            docker container prune --force
-           docker build . -t reconrext
+           docker build . -t reconrex
        - name: running Docker
          timeout-minutes: 340
          continue-on-error: true
          run: |
-           docker run --device /dev/fuse --privileged reconrext
+           docker run --device /dev/fuse --privileged reconrex
            
        - name: Loop workflow
          continue-on-error: true
