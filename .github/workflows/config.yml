@@ -50,5 +50,5 @@ jobs:
               echo "1" >> loop.txt
               git add loop.txt
               git commit -m "Workflow : hook"
-              git push -
+              git push -f
               
